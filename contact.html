@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Wijeweera Knit Wear</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white">
+
+    <header class="sticky top-0 z-50 bg-white/90 shadow-none">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <a href="index.html" class="flex items-center space-x-2">
+            <img src="images/wijeweera_logo.png" alt="Wijeweera Knit Wear Logo" class="h-10" style="height: 40px;">
+                <div>
+                    <span class="text-2xl font-extrabold text-indigo-700 tracking-tight block leading-none">
+                    WIJEWEERA
+                    </span>
+                    <span class="text-sm font-medium text-gray-600 block leading-none">KNIT WEAR (PVT) Ltd</span>
+                </div>
+        </a>
+
+            <nav id="desktop-nav" class="hidden md:flex space-x-6 text-lg font-medium">
+                <a href="index.html" class="text-gray-700 hover:text-indigo-600 transition duration-300 py-2">Home</a> 
+                
+                <div class="relative group">
+                    <button class="text-gray-700 hover:text-indigo-600 transition duration-300 py-2 inline-flex items-center group-hover:text-indigo-600 focus:outline-none">
+                        About Us
+                        <svg class="w-4 h-4 ml-1 transform transition-transform duration-300 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    
+                    <div class="absolute hidden group-hover:block z-10 min-w-[200px] bg-white rounded-lg shadow-xl py-2 transition duration-300 transform scale-95 opacity-0 group-hover:scale-100 group-hover:opacity-100 origin-top-left dropdown-content">
+                        <a href="about.html" class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition duration-150">Wijeweera Knit Wear</a>
+                        <a href="our-story.html" class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition duration-150">Our Story</a>
+                        <a href="gallery.html" class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition duration-150">Gallery</a>
+                        
+                        <a href="careers.html" class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition duration-150">Careers</a>
+                        
+                        <a href="csr.html" class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition duration-150">CSR</a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <button class="text-gray-700 hover:text-indigo-600 transition duration-300 py-2 inline-flex items-center group-hover:text-indigo-600 focus:outline-none">
+                        Products
+                        <svg class="w-4 h-4 ml-1 transform transition-transform duration-300 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+    
+                    <div class="absolute hidden group-hover:block z-10 min-w-[200px] bg-white rounded-lg shadow-xl py-2 transition duration-300 transform scale-95 opacity-0 group-hover:scale-100 group-hover:opacity-100 origin-top-left dropdown-content">
+                        <a href="products.html" class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition duration-150">All Collections</a>
+                        <div class="border-t border-gray-100 my-1"></div>
+                        <a href="products-gents.html" class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition duration-150">Gents Collection</a>
+                        <a href="products-ladies.html" class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition duration-150">Ladies Collection</a>
+                        <a href="products-junior.html" class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition duration-150">Junior Collection</a>
+                    </div>
+                </div>
+                <a href="brands.html" class="text-gray-700 hover:text-indigo-600 transition duration-300 py-2">Our Brands</a> 
+                <a href="order.html" class="text-white bg-indigo-600 px-4 py-2 rounded-lg hover:bg-indigo-700 transition duration-300 shadow-md">Place an Order</a>
+                <a href="contact.html" class="text-gray-700 hover:text-indigo-600 transition duration-300 active-link py-2">Contact Us</a> 
+            </nav>
+
+            <button id="mobile-menu-button" class="md:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+
+        <nav id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <a href="index.html" class="block py-3 px-4 text-gray-700 hover:bg-indigo-50" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Home</a>
+            <a href="about.html" class="block py-3 px-4 text-gray-700 hover:bg-indigo-50 transition duration-300">About Us</a>
+            <a href="about.html" class="block py-3 pl-8 text-gray-600 hover:bg-indigo-50 transition duration-300 border-l-4 border-transparent hover:border-indigo-400">Wijeweera Knit Wear</a>
+
+            <a href="our-story.html" class="block py-3 pl-8 text-gray-600 hover:bg-indigo-50 transition duration-300 border-l-4 border-transparent hover:border-indigo-400">Our Story</a>
+            <a href="gallery.html" class="block py-3 pl-8 text-gray-600 hover:bg-indigo-50 transition duration-300 border-l-4 border-transparent hover:border-indigo-400">Gallery</a>
+            <a href="careers.html" class="block py-3 pl-8 text-gray-600 hover:bg-indigo-50 transition duration-300 border-l-4 border-transparent hover:border-indigo-400">Careers</a>
+            <a href="csr.html" class="block py-3 pl-8 text-gray-600 hover:bg-indigo-50 transition duration-300 border-l-4 border-transparent hover:border-indigo-400">CSR</a>
+
+            <a href="products.html" class="block py-3 px-4 text-gray-700 hover:bg-indigo-50 transition duration-300">Products</a>
+            <a href="products-gents.html" class="block py-3 pl-8 text-gray-600 hover:bg-indigo-50 transition duration-300 border-l-4 border-transparent hover:border-indigo-400">Gents Collection</a>
+            <a href="products-ladies.html" class="block py-3 pl-8 text-gray-600 hover:bg-indigo-50 transition duration-300 border-l-4 border-transparent hover:border-indigo-400">Ladies Collection</a>
+            <a href="products-junior.html" class="block py-3 pl-8 text-gray-600 hover:bg-indigo-50 transition duration-300 border-l-4 border-transparent hover:border-indigo-400">Junior Collection</a>
+            <a href="brands.html" class="block py-3 px-4 text-gray-700 hover:bg-indigo-50" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Our Brands</a>
+            <a href="order.html" class="block py-3 px-4 text-white bg-indigo-600 hover:bg-indigo-700" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Place an Order</a>
+            <a href="contact.html" class="block py-3 px-4 text-gray-700 active-link hover:bg-indigo-50" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact" class="section-padding bg-gray-50">
+            <div class="container mx-auto px-4 max-w-4xl">
+                <h1 class="text-3xl font-bold text-center text-gray-900 mb-2">Get In Touch</h1>
+                <div class="animate-divider max-w-[120px]"></div>
+
+
+                <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                    <div class="space-y-8 p-6 bg-white rounded-xl shadow-xl">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Head Office - Sri Lanka</h3>
+
+                        <div class="flex items-start space-x-4">
+                            <svg class="w-6 h-6 text-indigo-600 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0v0a3 3 0 006 0z"></path></svg>
+                            <div>
+                                <h4 class="font-semibold text-lg text-gray-700">Location</h4>
+                                <p class="text-gray-600">Wijeweera Knit Wear (PVT) Ltd,<br> 435/4C,<br> Hokandara Road, Arangala, <br> Hokandara, <br> Sri Lanka.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <svg class="w-6 h-6 text-indigo-600 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-3.28a1 1 0 01-.948-.684l-1.498-4.493a1 1 0 01.502-1.21l-2.257-1.13a11.042 11.042 0 00-5.516-5.516l-1.13 2.257a1 1 0 01-1.21.502l-4.493-1.498A1 1 0 015 5H3z"></path></svg>
+                            <div>
+                                <h4 class="font-semibold text-lg text-gray-700">Phone</h4>
+                                <p class="text-gray-600">+94 11 256 1888 (General)</p>
+                                <p class="text-gray-600">+94 11 256 3621 (Sales/B2B)</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <svg class="w-6 h-6 text-indigo-600 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-2 4v7a2 2 0 01-2 2H5a2 2 0 01-2-2v-7"></path></svg>
+                            <div>
+                                <h4 class="font-semibold text-lg text-gray-700">Email</h4>
+                                <p class="text-gray-600">wijeweeraknitwear@gmail.com</p>
+                                <p class="text-gray-600">saleswijeweeraknitwear@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="pt-4 border-t border-gray-100">
+                            <h4 class="font-semibold text-lg text-gray-700 mb-3">Connect With Us</h4>
+                                <div class="flex space-x-6">
+                                    <a href="#" target="_blank" class="text-gray-500 hover:text-blue-600 transition duration-300" aria-label="Facebook">
+                                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.505 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.778-1.63 1.563V12h3.046l-.491 3.036h-2.555v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+                                    </a>
+                                    <a href="https://www.instagram.com/wijeweeraknitwear/" target="_blank" class="text-gray-500 hover:text-pink-600 transition duration-300" aria-label="Instagram">
+                                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><path d="M12 9a3 3 0 100 6 3 3 0 000-6zm0 8a5 5 0 110-10 5 5 0 010 10zM17.5 7A1.5 1.5 0 1017.5 4 1.5 1.5 0 0017.5 7z"/></svg>
+                                    </a>
+                                    <a href="#" target="_blank" class="text-gray-500 hover:text-gray-900 transition duration-300" aria-label="TikTok">
+                                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12.375 0C12.012 0 12 0.01 12 0.01C12 0.01 12 0.01 12 0.01V24H10C4.477 24 0 19.523 0 14V10C0 4.477 4.477 0 10 0H12.375ZM15.5 12.001V24H18V12.001H15.5Z" fill-rule="evenodd" clip-rule="evenodd" transform="rotate(0 12 12)"/></svg>
+                                    </a>
+                                    <a href="#" target="_blank" class="text-gray-500 hover:text-indigo-600 transition duration-300" aria-label="LinkedIn">
+                                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12c-.933 0-1.75-.8-1.75-1.777s.817-1.777 1.75-1.777 1.75.8 1.75 1.777c0 .977-.817 1.777-1.75 1.777zm13.5 12h-3v-5.604c0-3.366-4-3.235-4 0v5.604h-3v-11h3v1.765c1.397-2.586 7-2.723 7 2.355v6.88z"/></svg>
+                                    </a>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="p-8 bg-white rounded-xl shadow-xl">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Send Us A Message</h3>
+                        <form action="https://formsubmit.co/wijeweeraknitwear@gmail.com" method="POST" class="space-y-6">
+                            <div>
+                                <label for="c_name" class="block text-sm font-medium text-gray-700">Your Name *</label>
+                                <input type="text" name="Name" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500 shadow-sm">
+                            </div>
+                            <div>
+                                <label for="c_email" class="block text-sm font-medium text-gray-700">Your Email *</label>
+                                <input type="email" name="Email" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500 shadow-sm">
+                            </div>
+                            <div>
+                                <label for="c_name" class="block text-sm font-medium text-gray-700">Subject *</label>
+                                <input type="text" name="Subject" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500 shadow-sm">
+                            </div>
+                            <div>
+                                <label for="c_message" class="block text-sm font-medium text-gray-700">Message *</label>
+                                <textarea name="Message" rows="4" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500 shadow-sm"></textarea>
+                            </div>
+
+                            <input type="hidden" name="_next" value="thankyou.html">
+                            
+                            <input type="text" name="_gotcha" style="display:none" />
+
+                            <button type="submit" class="w-full bg-indigo-600 text-white text-lg font-semibold px-4 py-3 rounded-lg hover:bg-indigo-700 transition duration-300 mt-4">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding bg-white">
+            <div class="container mx-auto px-4 max-w-6xl">
+                <h2 class="text-3xl font-bold text-center text-gray-900 mb-6">Find Our Factory Location</h2>
+                <div class="w-20 h-1 bg-indigo-600 mx-auto mb-10 rounded"></div>
+
+                <div class="overflow-hidden rounded-xl shadow-2xl">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.0144811355435!2d79.9636417!3d6.888868299999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae251094c1e1095%3A0x277d34a1f2302bea!2sWijeweera%20Knit%20Wear%20(Pvt)%20Ltd!5e0!3m2!1sen!2slk!4v1764663749903!5m2!1sen!2slk" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="mt-8 p-6 bg-gray-50 rounded-xl shadow-inner text-center">
+                    <p class="text-xl font-semibold text-gray-700 mb-2">Wijeweera Knit Wear (Pvt) Ltd</p>
+                    <p class="text-gray-600">435/4C Hokandara Rd, Hokandara 10118, Sri Lanka</p>
+                    <a href="https://maps.google.com/?cid=2845488409725643754&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" class="inline-block mt-4 text-indigo-600 hover:text-indigo-800 font-medium transition duration-300">
+                        Get Directions on Google Maps →
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-lg font-semibold mb-2">Wijeweera Knit Wear (PVT) Ltd</p>
+            <p class="text-sm text-gray-400">&copy; 2025 All Rights Reserved. | Crafted with Quality in Sri Lanka.</p>
+            <div class="mt-4 space-x-4 text-sm">
+                <a href="about.html" class="hover:text-indigo-400">Privacy Policy</a>
+                <a href="order.html" class="hover:text-indigo-400">Wholesale Terms</a>
+                <a href="contact.html" class="hover:text-indigo-400">Sitemap</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

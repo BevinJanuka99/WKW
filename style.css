@@ -1,0 +1,286 @@
+/*
+ * style.css
+ * Wijeweera Knit Wear (WKW) Custom Styles
+ */
+
+/* 1. Base Styles & Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #1f2937;
+    /* Prevent horizontal scroll during some animations */
+    overflow-x: hidden;
+}
+
+/* 2. Custom Tailwind Utilities & Helpers */
+.section-padding {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.active-link {
+    color: #4f46e5 !important; /* indigo-600 */
+    border-bottom: 2px solid #4f46e5;
+    /* Ensure no background color is applied, just in case */
+    background-color: transparent !important;
+}
+
+/*
+ * style.css FIX: Dropdown Menu Vertical Alignment
+ */
+
+/* Force all links within the dropdown container to display as blocks, 
+   ensuring they stack vertically (one per line) */
+.dropdown-content a 
+{
+    display: block !important;
+    width: 100%; /* Ensure the clickable area spans the full width */
+}
+
+/* 3. Animations & Effects */
+
+/* Hero Entrance Animation */
+@keyframes fadeInSlideUp 
+{
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-hero-text 
+{
+    animation: fadeInSlideUp 1s ease-out 0.2s forwards;
+    opacity: 0; /* Start hidden */
+}
+
+/* Card Hover Effect */
+.card-hover-effect 
+{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-hover-effect:hover 
+{
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Press Effect */
+.btn-press:active 
+{
+    transform: scale(0.98);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Divider Line Animation */
+.animate-divider 
+{
+    width: 0;
+    height: 4px;
+    background-color: #4f46e5;
+    margin: 0 auto 2rem;
+    animation: expandWidth 1.5s ease-out 0.5s forwards;
+    opacity: 0;
+}
+@keyframes expandWidth {
+    0% { width: 0; opacity: 0; }
+    50% { opacity: 1; }
+    100% { width: 100px; opacity: 1; }
+}
+
+/*
+ * style.css FIX: Navigation Alignment
+ */
+
+/* 1. Force all primary desktop navigation items to be vertically centered */
+#desktop-nav a,
+#desktop-nav .group button 
+{
+    /* Ensures consistent baseline for text and flex alignment */
+    display: inline-flex; 
+    align-items: center;
+    /* Apply consistent vertical padding/height across all nav items */
+    height: 100%; /* Important: makes height consistent */
+    padding-top: 0.5rem;   /* Ensure padding matches the py-2 on the button */
+    padding-bottom: 0.5rem; /* Ensure padding matches the py-2 on the button */
+}
+
+/* 2. Fix for the specific dropdown button */
+#desktop-nav .group button 
+{
+    /* Remove any default button background/border/margin that might cause offset */
+    background: none;
+    border: none;
+    margin: 0;
+    cursor: pointer;
+}
+
+/* 4. Responsive Design Enhancements */
+
+/* Fixed Navbar Styling */
+header {
+    /* Slightly less shadow on mobile for a cleaner look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+@media (min-width: 768px) {
+    header {
+        /* Stronger shadow on desktop */
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+    .active-link {
+        /* Desktop: Add slight movement on hover */
+        transform: translateY(-2px);
+    }
+    .active-link:hover {
+        border-bottom-color: #3730a3; /* darker indigo */
+    }
+}
+
+/*
+ * style.css additions for Dropdown Active State
+ */
+
+/* 1. Style the parent link when one of the children is the current page */
+.dropdown-parent-active .dropdown-button {
+    color: #4f46e5 !important; /* indigo-600 */
+    border-bottom: 2px solid #4f46e5;
+}
+
+/* 2. Style the active link within the dropdown */
+.dropdown-content .active-link {
+    background-color: #eef2ff; /* indigo-50 */
+    font-weight: 600; /* semi-bold */
+}
+
+/* --- GALLERY PAGE SPECIFIC STYLES --- */
+
+/* Hero Text Animation */
+@keyframes fadeInSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-hero-text {
+    animation: fadeInSlideUp 0.8s ease-out forwards;
+}
+
+/* Divider Animation */
+@keyframes expandIn {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+    to {
+        width: 120px;
+        opacity: 1;
+    }
+}
+
+.animate-divider {
+    height: 4px;
+    background-color: #4f46e5; /* indigo-600 */
+    margin-top: 10px;
+    animation: expandIn 1s ease-out 0.5s forwards;
+    opacity: 0; /* Start hidden */
+}
+
+/* Card Hover Effect */
+.card-hover-effect:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.card-hover-effect {
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+/* --- NEW MODERN ANIMATIONS --- */
+
+/* Keyframes for a smooth fade-in and subtle lift (for main content sections) */
+@keyframes fadeInContent {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Class to apply to major sections (like the gallery grid) */
+.animate-content-entry {
+    animation: fadeInContent 0.7s ease-out forwards;
+    opacity: 0; /* Start invisible */
+}
+
+/* Keyframes for a pulse effect (great for CTA buttons) */
+@keyframes pulseShadow {
+    0% {
+        box-shadow: 0 0 0 0 rgba(79, 70, 229, 0.7); /* indigo-600 with opacity */
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(79, 70, 229, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(79, 70, 229, 0);
+    }
+}
+
+/* Class to apply to the CTA button */
+.animate-cta-pulse {
+    animation: pulseShadow 2s infinite cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Keyframes for a slight left-to-right movement on hover (for logo or important links) */
+@keyframes shake-x {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    20%, 60% {
+        transform: translateX(-2px);
+    }
+    40%, 80% {
+        transform: translateX(2px);
+    }
+}
+
+/* --- HEADER SCROLL TRANSITION --- */
+
+.header-scrolled {
+    /* When scrolled, we want the background to be fully white and opaque */
+    background-color: #ffffff; 
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06); /* Shadow stays for clear separation */
+}
+
+/* Initially, the header should have a slightly transparent look if needed, 
+   but since it starts with bg-white, we just ensure smooth transitions */
+header {
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* --- HOMEPAGE SLIDER STYLES --- */
+
+.slider-image {
+    /* Set a responsive height for the slider images */
+    height: 400px; /* Default for smaller screens */
+}
+
+@media (min-width: 768px) { /* md breakpoint and up */
+    .slider-image {
+        height: 500px;
+    }
+}

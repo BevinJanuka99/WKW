@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About WKW | Wijeweera Knit Wear (PVT) Ltd</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white">
+
+    <header class="sticky top-0 z-50 bg-white/90 shadow-none">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <a href="index.html" class="flex items-center space-x-2">
+            <img src="images/wijeweera_logo.png" alt="Wijeweera Knit Wear Logo" class="h-10" style="height: 40px;">
+                <div>
+                    <span class="text-2xl font-extrabold text-indigo-700 tracking-tight block leading-none">
+                    WIJEWEERA
+                    </span>
+                    <span class="text-sm font-medium text-gray-600 block leading-none">KNIT WEAR (PVT) Ltd</span>
+                </div>
+        </a>
+            <nav id="desktop-nav" class="hidden md:flex space-x-6 text-lg font-medium">
+                <a href="index.html" class="text-gray-700 hover:text-indigo-600 transition duration-300 py-2">Home</a>
+                <div class="relative group">
+                    <button class="text-gray-700 hover:text-indigo-600 transition duration-300 py-2 inline-flex items-center group-hover:text-indigo-600 focus:outline-none dropdown-button">
+                        About Us
+                        <svg class="w-4 h-4 ml-1 transform transition-transform duration-300 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+
+                    <div class="absolute hidden group-hover:block z-10 min-w-[200px] bg-white rounded-lg shadow-xl py-2 transition duration-300 transform scale-95 opacity-0 group-hover:scale-100 group-hover:opacity-100 origin-top-left dropdown-content">
+                        <a href="about.html" class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition duration-150">Wijeweera Knit Wear</a>
+                        <a href="our-story.html" class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition duration-150">Our Story</a>
+                        <a href="gallery.html" class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition duration-150">Gallery</a>
+                        <a href="careers.html" class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition duration-150">Careers</a>
+                        <a href="csr.html" class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition duration-150">CSR</a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <button class="text-gray-700 hover:text-indigo-600 transition duration-300 py-2 inline-flex items-center group-hover:text-indigo-600 focus:outline-none">
+                        Products
+                        <svg class="w-4 h-4 ml-1 transform transition-transform duration-300 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+    
+                    <div class="absolute hidden group-hover:block z-10 min-w-[200px] bg-white rounded-lg shadow-xl py-2 transition duration-300 transform scale-95 opacity-0 group-hover:scale-100 group-hover:opacity-100 origin-top-left dropdown-content">
+                        <a href="products.html" class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition duration-150">All Collections</a>
+                        <div class="border-t border-gray-100 my-1"></div>
+                        <a href="products-gents.html" class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition duration-150">Gents Collection</a>
+                        <a href="products-ladies.html" class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition duration-150">Ladies Collection</a>
+                        <a href="products-junior.html" class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition duration-150">Junior Collection</a>
+                    </div>
+                </div>
+                <a href="brands.html" class="text-gray-700 hover:text-indigo-600 transition duration-300">Our Brands</a>
+                <a href="order.html" class="text-white bg-indigo-600 px-4 py-2 rounded-lg hover:bg-indigo-700 transition duration-300 shadow-lg btn-press">Place an Order</a>
+                <a href="contact.html" class="text-gray-700 hover:text-indigo-600 transition duration-300">Contact Us</a>
+            </nav>
+
+            <button id="mobile-menu-button" class="md:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100 transition duration-300" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+
+        <nav id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <a href="index.html" class="block py-3 px-4 text-gray-700 hover:bg-indigo-50 transition duration-300">Home</a>
+            <a href="about.html" class="block py-3 px-4 text-gray-700 hover:bg-indigo-50 transition duration-300">About Us</a>
+            <a href="our-story.html" class="block py-3 pl-8 text-gray-600 hover:bg-indigo-50 transition duration-300 border-l-4 border-transparent hover:border-indigo-400">Our Story</a>
+            <a href="gallery.html" class="block py-3 pl-8 text-gray-600 hover:bg-indigo-50 transition duration-300 border-l-4 border-transparent hover:border-indigo-400">Gallery</a>
+            <a href="careers.html" class="block py-3 pl-8 text-gray-600 hover:bg-indigo-50 transition duration-300 border-l-4 border-transparent hover:border-indigo-400">Careers</a>
+            <a href="csr.html" class="block py-3 pl-8 text-gray-600 hover:bg-indigo-50 transition duration-300 border-l-4 border-transparent hover:border-indigo-400">CSR (Sustainability)</a>
+            <a href="products.html" class="block py-3 px-4 text-gray-700 hover:bg-indigo-50 transition duration-300">Products</a>
+            <a href="products-gents.html" class="block py-3 pl-8 text-gray-600 hover:bg-indigo-50 transition duration-300 border-l-4 border-transparent hover:border-indigo-400">Gents Collection</a>
+            <a href="products-ladies.html" class="block py-3 pl-8 text-gray-600 hover:bg-indigo-50 transition duration-300 border-l-4 border-transparent hover:border-indigo-400">Ladies Collection</a>
+            <a href="products-junior.html" class="block py-3 pl-8 text-gray-600 hover:bg-indigo-50 transition duration-300 border-l-4 border-transparent hover:border-indigo-400">Junior Collection</a>
+            <a href="brands.html" class="block py-3 px-4 text-gray-700 hover:bg-indigo-50 transition duration-300">Our Brands</a>
+            <a href="order.html" class="block py-3 px-4 text-white bg-indigo-600 hover:bg-indigo-700 btn-press">Place an Order</a>
+            <a href="contact.html" class="block py-3 px-4 text-gray-700 hover:bg-indigo-50 transition duration-300">Contact Us</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="bg-indigo-700 section-padding py-24">
+            <div class="container mx-auto px-4 text-center">
+                <img src="images/wijeweera_logo.png" 
+                     alt="Wijeweera Knit Wear Logo" 
+                     class="h-32 sm:h-40 mx-auto mb-2 animate-hero-text filter drop-shadow-lg"
+                     
+                >
+                <h1 class="text-5xl font-extrabold text-white mb-4 animate-hero-text">Wijeweera Knit Wear (PVT) Ltd</h1>
+                <p class="text-xl text-indigo-200 animate-hero-text">Sri Lanka's knitwear leader, defined by quality, trust, and innovation.</p>
+            </div>
+        </section>
+
+        <section class="section-padding bg-white">
+            <div class="container mx-auto px-4 max-w-5xl">
+                <h2 class="text-3xl font-bold text-center text-gray-900 mb-2">A Legacy Knited in Quality</h2>
+                <div class="animate-divider max-w-[150px]"></div>
+                
+                <p class="text-lg text-gray-600 mb-12 text-center">
+                    For over 69 years, WKW has been at the forefront of the Sri Lankan knitwear industry, specializing in superior quality innerwear, casual wear, and customized corporate apparel. We are committed to ethical manufacturing and exceptional customer value.
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <div class="p-6 bg-gray-50 rounded-xl shadow-md card-hover-effect">
+                        <h3 class="text-xl font-bold text-indigo-600 mb-3">Our Mission</h3>
+                        <p class="text-gray-600">To deliver high-quality, comfortable, and durable knitwear while maintaining sustainable and ethical manufacturing practices.</p>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-xl shadow-md card-hover-effect">
+                        <h3 class="text-xl font-bold text-indigo-600 mb-3">Our Vision</h3>
+                        <p class="text-gray-600">To be the most trusted and preferred knitwear brand and manufacturer in the South Asian region.</p>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-xl shadow-md card-hover-effect">
+                        <h3 class="text-xl font-bold text-indigo-600 mb-3">Core Value</h3>
+                        <p class="text-gray-600">Commitment to Quality: From raw cotton to the final stitch, we ensure excellence and durability in every garment.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-indigo-50 py-16">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Ready to Partner with WKW?</h2>
+                <p class="text-lg text-gray-600 mb-8">Whether for wholesale needs or customized apparel, contact our sales team today.</p>
+                <a href="contact.html" class="inline-block bg-indigo-600 text-white text-lg font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-indigo-700 transition duration-300 transform hover:scale-105 btn-press">
+                    Contact Sales &rarr;
+                </a>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-lg font-semibold mb-2">Wijeweera Knit Wear (PVT) Ltd</p>
+            <p class="text-sm text-gray-400">&copy; 2025 All Rights Reserved. | Crafted with Quality in Sri Lanka.</p>
+            <div class="mt-4 space-x-4 text-sm">
+                <a href="about.html" class="hover:text-indigo-400 transition duration-300">Privacy Policy</a>
+                <a href="order.html" class="hover:text-indigo-400 transition duration-300">Wholesale Terms</a>
+                <a href="contact.html" class="hover:text-indigo-400 transition duration-300">Sitemap</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

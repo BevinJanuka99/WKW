@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Brands | Wijeweera Knit Wear</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white">
+
+    <header class="sticky top-0 z-50 bg-white/90 shadow-none">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <a href="index.html" class="flex items-center space-x-2">
+            <img src="images/wijeweera_logo.png" alt="Wijeweera Knit Wear Logo" class="h-10" style="height: 40px;">
+                <div>
+                    <span class="text-2xl font-extrabold text-indigo-700 tracking-tight block leading-none">
+                    WIJEWEERA
+                    </span>
+                    <span class="text-sm font-medium text-gray-600 block leading-none">KNIT WEAR (PVT) Ltd</span>
+                </div>
+        </a>
+
+            <nav id="desktop-nav" class="hidden md:flex space-x-6 text-lg font-medium">
+                <a href="index.html" class="text-gray-700 hover:text-indigo-600 transition duration-300 py-2">Home</a>
+                <div class="relative group">
+                    <button class="text-gray-700 hover:text-indigo-600 transition duration-300 py-2 inline-flex items-center group-hover:text-indigo-600 focus:outline-none">
+                        About Us
+                        <svg class="w-4 h-4 ml-1 transform transition-transform duration-300 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    
+                    <div class="absolute hidden group-hover:block z-10 min-w-[200px] bg-white rounded-lg shadow-xl py-2 transition duration-300 transform scale-95 opacity-0 group-hover:scale-100 group-hover:opacity-100 origin-top-left dropdown-content">
+                        <a href="about.html" class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition duration-150">Wijeweera Knit Wear</a>
+                        <a href="our-story.html" class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition duration-150">Our Story</a>
+                        <a href="gallery.html" class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition duration-150">Gallery</a>
+                        
+                        <a href="careers.html" class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition duration-150">Careers</a>
+                        
+                        <a href="csr.html" class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition duration-150">CSR</a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <button class="text-gray-700 hover:text-indigo-600 transition duration-300 py-2 inline-flex items-center group-hover:text-indigo-600 focus:outline-none">
+                        Products
+                        <svg class="w-4 h-4 ml-1 transform transition-transform duration-300 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+    
+                    <div class="absolute hidden group-hover:block z-10 min-w-[200px] bg-white rounded-lg shadow-xl py-2 transition duration-300 transform scale-95 opacity-0 group-hover:scale-100 group-hover:opacity-100 origin-top-left dropdown-content">
+                        <a href="products.html" class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition duration-150">All Collections</a>
+                        <div class="border-t border-gray-100 my-1"></div>
+                        <a href="products-gents.html" class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition duration-150">Gents Collection</a>
+                        <a href="products-ladies.html" class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition duration-150">Ladies Collection</a>
+                        <a href="products-junior.html" class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition duration-150">Junior Collection</a>
+                    </div>
+                </div>
+                <a href="brands.html" class="text-gray-700 hover:text-indigo-600 transition duration-300 active-link">Our Brands</a>
+                <a href="order.html" class="text-white bg-indigo-600 px-4 py-2 rounded-lg hover:bg-indigo-700 transition duration-300 shadow-md">Place an Order</a>
+                <a href="contact.html" class="text-gray-700 hover:text-indigo-600 transition duration-300">Contact Us</a>
+            </nav>
+
+            <button id="mobile-menu-button" class="md:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+
+        <nav id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <a href="index.html" class="block py-3 px-4 text-gray-700 hover:bg-indigo-50" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Home</a>
+            <a href="about.html" class="block py-3 px-4 text-gray-700 hover:bg-indigo-50 transition duration-300">About Us</a>
+            <a href="about.html" class="block py-3 pl-8 text-gray-600 hover:bg-indigo-50 transition duration-300 border-l-4 border-transparent hover:border-indigo-400">Wijeweera Knit Wear</a>
+
+            <a href="our-story.html" class="block py-3 pl-8 text-gray-600 hover:bg-indigo-50 transition duration-300 border-l-4 border-transparent hover:border-indigo-400">Our Story</a>
+            <a href="gallery.html" class="block py-3 pl-8 text-gray-600 hover:bg-indigo-50 transition duration-300 border-l-4 border-transparent hover:border-indigo-400">Gallery</a>
+            <a href="careers.html" class="block py-3 pl-8 text-gray-600 hover:bg-indigo-50 transition duration-300 border-l-4 border-transparent hover:border-indigo-400">Careers</a>
+            <a href="csr.html" class="block py-3 pl-8 text-gray-600 hover:bg-indigo-50 transition duration-300 border-l-4 border-transparent hover:border-indigo-400">CSR</a>
+
+            <a href="products.html" class="block py-3 px-4 text-gray-700 hover:bg-indigo-50 transition duration-300">Products</a>
+            <a href="products-gents.html" class="block py-3 pl-8 text-gray-600 hover:bg-indigo-50 transition duration-300 border-l-4 border-transparent hover:border-indigo-400">Gents Collection</a>
+            <a href="products-ladies.html" class="block py-3 pl-8 text-gray-600 hover:bg-indigo-50 transition duration-300 border-l-4 border-transparent hover:border-indigo-400">Ladies Collection</a>
+            <a href="products-junior.html" class="block py-3 pl-8 text-gray-600 hover:bg-indigo-50 transition duration-300 border-l-4 border-transparent hover:border-indigo-400">Junior Collection</a>
+            <a href="brands.html" class="block py-3 px-4 text-gray-700 active-link hover:bg-indigo-50" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Our Brands</a>
+            <a href="order.html" class="block py-3 px-4 text-white bg-indigo-600 hover:bg-indigo-700" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Place an Order</a>
+            <a href="contact.html" class="block py-3 px-4 text-gray-700 hover:bg-indigo-50" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="brands" class="py-16 bg-blue-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h1 class="text-4xl font-extrabold text-gray-900 mb-2">Meet Our Iconic Brands</h1>
+                    <div class="animate-divider mx-auto max-w-[150px]"></div>
+                </div>
+                
+                <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
+                    
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-500 hover:shadow-2xl group">
+                        <div class="aspect-[3/4] overflow-hidden">
+                            <img src="Images/Brands/Ballerina.jpg" alt="Ballerina Fashion Portrait" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-center mb-4">
+                                <img src="Images/LOGOs/Ballerina-Logo.jpg" alt="Ballerina Logo" class="h-10 object-contain">
+                            </div>
+                            <blockquote class="italic text-gray-500 border-l-4 border-pink-500 pl-3 mb-4 text-sm leading-relaxed">"The Elegance of Everyday Comfort."</blockquote>
+                            <p class="text-gray-600 text-sm leading-relaxed">Premium ladies' innerwear blending feminine design with superior fabric for ultimate confidence.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-500 hover:shadow-2xl group">
+                        <div class="aspect-[3/4] overflow-hidden">
+                            <img src="Images/Brands/Mantex.jpg" alt="Mantex Fashion Portrait" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-center mb-4">
+                                <img src="Images/LOGOs/Mantex-Logo.jpg" alt="Mantex Logo" class="h-10 object-contain">
+                            </div>
+                            <blockquote class="italic text-gray-500 border-l-4 border-blue-700 pl-3 mb-4 text-sm leading-relaxed">"Built for Performance, Defined by Comfort."</blockquote>
+                            <p class="text-gray-600 text-sm leading-relaxed">The definitive choice for men's innerwear. Robust quality meets advanced athletic fit.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-500 hover:shadow-2xl group">
+                        <div class="aspect-[3/4] overflow-hidden">
+                            <img src="Images/Brands/Ritton.jpg" alt="Ritton Fashion Portrait" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-center mb-4">
+                                <img src="Images/LOGOs/Ritton-Logo.jpg" alt="Ritton Logo" class="h-10 object-contain">
+                            </div>
+                            <blockquote class="italic text-gray-500 border-l-4 border-green-700 pl-3 mb-4 text-sm leading-relaxed">"The Essential, Mastered."</blockquote>
+                            <p class="text-gray-600 text-sm leading-relaxed">High-quality, reliable basics including plain T-shirts and casual essentials for everyone.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-500 hover:shadow-2xl group">
+                        <div class="aspect-[3/4] overflow-hidden">
+                            <img src="Images/Brands/Davi Jones.jpg" alt="Davi Jones Fashion Portrait" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-center mb-4">
+                                <img src="Images/LOGOs/Davi-Jones-Logo.jpg" alt="Davi Jones Logo" class="h-10 object-contain">
+                            </div>
+                            <blockquote class="italic text-gray-500 border-l-4 border-gray-800 pl-3 mb-4 text-sm leading-relaxed">"The Modern Edge of Casual Apparel."</blockquote>
+                            <p class="text-gray-600 text-sm leading-relaxed">Contemporary style and trending designs in casual wear for the youthful and modern generation.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-lg font-semibold mb-2">Wijeweera Knit Wear (PVT) Ltd</p>
+            <p class="text-sm text-gray-400">&copy; 2025 All Rights Reserved. | Crafted with Quality in Sri Lanka.</p>
+            <div class="mt-4 space-x-4 text-sm">
+                <a href="about.html" class="hover:text-indigo-400">Privacy Policy</a>
+                <a href="order.html" class="hover:text-indigo-400">Wholesale Terms</a>
+                <a href="contact.html" class="hover:text-indigo-400">Sitemap</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
